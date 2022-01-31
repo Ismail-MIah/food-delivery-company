@@ -1,0 +1,247 @@
+/* css Reset  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Css Variables */
+:root {
+  --navbar-height: 59px;
+}
+/* Navigation BAr  */
+#navbar {
+  display: flex;
+  align-items: center;
+  font-family: "Mochiy Pop P One", sans-serif;
+  position: sticky;
+  top: 0;
+  /* justify-content: center; */
+}
+#navbar::before {
+  content: " ";
+  background-color: black;
+  position: absolute;
+  height: 90%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+/* Navigation BAr : logo and Image  */
+#logo {
+  margin: 5px 45px;
+}
+
+#logo img {
+  height: 42px;
+  margin: 3px 5px;
+}
+
+/* Navigation BAr : list Styleing  */
+
+#navbar ul {
+  display: flex;
+}
+
+#navbar ul li {
+  list-style: none;
+}
+#navbar ul li a {
+  font-size: 1.3rem;
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* home section  */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 57px;
+  height: 578px;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
+#home::before {
+  content: " ";
+  background: url(../img/bg3333333333.jpg) no-repeat center center/cover;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+#home h1 {
+  color: white;
+  text-align: center;
+  font-family: "Baloo Thambi 2", cursive;
+}
+#home p {
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  font-family: "Baloo Thambi 2", cursive;
+  margin: 3px 0px;
+}
+
+/* services-container  */
+
+#services {
+  margin: 34px;
+  display: flex;
+}
+
+#services .box {
+  background-color: rgb(241, 241, 240);
+  border: 2px solid brown;
+  padding: 8px 10px;
+  text-align: justify;
+  margin: 3px 4px;
+  border-radius: 16px;
+}
+
+#services .box img {
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+}
+#services .box p {
+  font-size: 1.2rem;
+  font-family: "Baloo Thambi 2", cursive;
+}
+
+/* cline section  */
+#clinet-section {
+  margin-bottom: 90px;
+}
+#clinet-section::before {
+  content: " ";
+  background: url(../img/bg3333333333.jpg) no-repeat center center/cover;
+  position: absolute;
+  height: 54%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.client-item {
+  padding: 34px;
+}
+.clients img {
+  height: 124px;
+}
+
+/* Contract Section  */
+#contact {
+  position: relative;
+}
+#contact::before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url(../img/contract.jpg) no-repeat center center/cover;
+  background-repeat: no-repeat;
+}
+#contract-box {
+}
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form-group input {
+  width: 50%;
+  height: auto;
+  font-size: 20px;
+  padding: 8px 8px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+
+  background-color: rgb(223, 222, 222);
+}
+.form-group input:focus {
+  border: 3px solid green;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+#massage {
+  width: 50%;
+  background-color: rgb(223, 222, 222);
+  padding: 10px;
+  font-size: 18px;
+}
+#submit-button {
+  padding: 10px;
+  width: 50%;
+  font-size: 30px;
+  margin: 5px 0px;
+  border-radius: 5px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  background-color: rgb(223, 222, 222);
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+
+/* footer section  */
+footer {
+  background: black;
+  color: white;
+  padding: 9px 20px;
+  font-size: 20px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-weight: bolder;
+}
+
+/* utility Class */
+.h-primary {
+  font-size: 3.4rem;
+  padding: 12px;
+}
+.h-secondary {
+  font-size: 1.8rem;
+  padding: 12px;
+}
+
+.center {
+  text-align: center;
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: brown;
+  color: white;
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  font-weight: bolder;
+  cursor: pointer;
+}

@@ -1,0 +1,123 @@
+/* navsection  */
+
+#navbar {
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+#navbar::before {
+  content: " ";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.4;
+}
+#navbar ul {
+  margin-bottom: 10px;
+}
+#navbar ul li a {
+  font-size: 12px;
+  padding: 2px 10px;
+}
+
+/* Home Section   */
+
+#home {
+  height: 250px;
+}
+#home::before {
+  height: 340px;
+}
+#home p {
+  font-size: 11px;
+}
+
+/* services-container */
+
+#services {
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0px 10px 10px 10px;
+  justify-content: center;
+}
+
+#services .box p {
+  font-size: 0.89rem;
+}
+
+/* clinet-section */
+
+#clinet-section {
+  margin-bottom: 10px;
+}
+
+#clinet-section::before {
+  height: 30%;
+}
+
+.clients {
+}
+
+.client-item {
+  padding: 10px;
+}
+
+.clients img {
+  height: 50px;
+}
+
+/* ------------Contact------------ */
+
+#contact {
+  margin-top: 40px;
+}
+.form-group input {
+  font-size: 14px;
+  width: 90%;
+}
+
+#massage {
+  width: 90%;
+  font-size: 14px;
+}
+
+#submit-button {
+  font-size: 14px;
+  width: 90%;
+  background-color: aqua;
+}
+
+/* ------------footer----------------  */
+
+footer {
+  font-size: 14px;
+}
+/* ------------------utility Class--------------- */
+.h-primary {
+  font-size: 1.2rem;
+  padding: 12px;
+}
+.h-secondary {
+  font-size: 0.8rem;
+  padding: 12px;
+}
+
+.center {
+  text-align: center;
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: brown;
+  color: white;
+  margin: 17px;
+  font-size: 0.7rem;
+  border-radius: 10px;
+  font-weight: bolder;
+  cursor: pointer;
+}
